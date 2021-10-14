@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>SUBSCRIPTION !</title>
+      <link rel="stylesheet" href="style2.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+      <nav class="white" role="navigation">
+			<div class="container">
+			  <a id="logo-container" href="#" class="brand-logo"> <img src="logo.png" width="200" height="64"></a>
+			 <ul class="right hide-on-med-and-down">
+				<li><a href="land.html">Home</a></li>
+		
+				<li><a href="index.html">Weather</a></li>
+		
+				
+			  </ul>
+			  <ul id="nav-mobile" class="sidenav">
+				<li><a href="land.html">Home</a></li>
+				
+				<li><a href="index.html">Weather</a></li>
+				
+				
+				
+			  </ul>
+			  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			</div>
+		  </nav>
+
+      <div class="wrapper">
+         <div class="title-text">
+            <div class=" free trail">
+               PAY 299 INR FOR LIFE TIME ACCESS
+            </div>
+            <div class="SUBSCRIBE">
+               !!
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">FREE TRAIL</label>
+               <label for="signup" class="slide signup">SUBSCRIBE</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder=" Card Number " required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Billing Address" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">2 hours of free trail</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Start free trail">
+                  </div>
+                  <div class="signup-link">
+                     want a per day access? <a href="perday.html">click here</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Card Number " required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Billing Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Submit">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+        
+      </script>
+   </body>
+</html>
